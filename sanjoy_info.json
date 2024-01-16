@@ -1,0 +1,61 @@
+[
+    {
+        "name": "Sanjoy Gorai",
+        "rollNo": null,
+        "DOB": "Jun 10 2000",
+        "height": null,
+        "skinColor": null,
+        "age": 22,
+        "photo": null,
+        "mobileNo": [
+            9064619983,
+            7098215740
+        ],
+        "fullAddress": {
+            "village": "Dubrajpur",
+            "postOffice": "Garh-Dubrajpur",
+            "pancgayet": "Chhatna-II",
+            "PIN": 722132,
+            "block": "Chhatna",
+            "P.S": "Chhatna",
+            "distric": "Bankura",
+            "state": "West Bengal",
+            "country": "India"
+        },
+        "maritalStatus": "Single",
+        "IdProofs": {
+            "voterCard": {
+                "number": null,
+                "name": null,
+                "constituency": "Dubrajpur",
+                "dateOfIssue": null
+            },
+            "aadharCard": {
+                "number": 52527262
+            },
+            "PAN": null,
+            "drivingLicence": null,
+            "passport": null
+        },
+        "financialStatus": "unemplotmented",
+        "BankungDetails": {
+            "noOfBankAccounts": 2,
+            "nameOfBnks": [
+                "SBI",
+                "CBI"
+            ],
+            "balance": null,
+            "nomenee": null
+        },
+        "isGoveEmployee": false,
+        "hasFourWheelers": false,
+        "properties": [
+            "one small house",
+            "some lands",
+            "one desktop",
+            "two-four mobiles",
+            "one cycle"
+        ],
+        "noOfFamilyMenbers": "3-4"
+    }
+]

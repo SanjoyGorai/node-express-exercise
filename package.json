@@ -1,6 +1,7 @@
 {
   "name": "express-app",
   "version": "1.0.0",
+  "type" : "module",
   "description": "This is an Express App",
   "main": "index.js",
   "scripts": {
