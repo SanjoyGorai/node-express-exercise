@@ -1,7 +1,7 @@
 {
   "name": "express-app",
   "version": "1.0.0",
-  "type" : "module",
+  "type": "module",
   "description": "This is an Express App",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,8 @@
     "start": "nodemon index.js"
   },
   "author": "Sanjoy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
 }

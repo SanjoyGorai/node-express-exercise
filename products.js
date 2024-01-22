@@ -27,6 +27,8 @@ let data_product = [
   },
 ];
 
+export default data_product;
+
 data_product.map((prducts)=> console.log(prducts))
 
 console.log();
