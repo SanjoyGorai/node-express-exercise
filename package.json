@@ -11,6 +11,8 @@
   "author": "Sanjoy",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.9"
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "mongoose": "^8.1.0"
   }
 }

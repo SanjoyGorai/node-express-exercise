@@ -1,77 +1,27 @@
+import express from 'express';
+const app = express();
+const PORT = process.env.PORT || 4001;
+import userRouter from './routers/user.js'
+import cors from 'cors';
 
-// const express = require('express')
-import express from 'express'
-const app = express()
-const PORT = process.env.PORT || 3000;
-
-import data_product from './products.js'
-import ejs from 'ejs'
-
-// const data_product = [
-//     {
-//         id: 1,
-//         name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-//         new_price: 50.00,
-//         old_price: 80.50,
-//     },
-//     {
-//         id: 2,
-//         name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-//         new_price: 85.00,
-//         old_price: 120.50,
-//     },
-//     {
-//         id: 3,
-//         name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-//         new_price: 60.00,
-//         old_price: 100.50,
-//     },
-//     {
-//         id: 4,
-//         name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-//         new_price: 100.00,
-//         old_price: 150.00,
-//     },
-// ];
-
-
-const person = {
-    name: 'Sanjoy Gorai',
-    age: 22,
-    mobile: 9064,
-    country: 'India'
-}
+app.use(cors())
 
 app.get('/', (req, res) => {
-    // console.log(req.url);
-    res.send("Hello from Express JS.");
-})
-
-app.get('/person', (req, res) => {
-    res.send(person)
-    // console.log(req.url);
+  res.send('Hello from Express Js')
 });
 
-app.get('/products', (req, res) => {
-    res.send(data_product);
-    // console.log(data_product);
+app.use('/user', userRouter);
+
+app.use(express.json());
+app.use(express.text());
+app.put('/api/post', (req, res) => {
+  console.log(req.body);
+  res.send("Success");
 });
-
-app.get('/sanjoy', (req, res) => {
-    // res.send(sanjoy);
-});
-
-
-let people = ['geddy', 'neil', 'alex'];
-let html = ejs.render('<%= people.join(", "); %>', { people: people });
-app.get('/ejs', (req, res) => {
-    res.send(html);
-})
-
 
 
 app.listen(PORT, () => {
-    console.log("Server is running on: " + PORT);
-})
+  console.log(`Express Server listening on port http://localhost:${PORT}`);
+});
 
-
+console.log()
