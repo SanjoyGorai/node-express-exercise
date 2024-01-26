@@ -4,6 +4,18 @@ const PORT = process.env.PORT || 4001;
 import userRouter from './routers/user.js'
 import cors from 'cors';
 import mobiles from './ProductsApi/products.js'
+import mongoose from 'mongoose';
+
+
+mongoose.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2');
+const db = mongoose.connection;
+
+db.on('error', (err) => {
+  console.log('MongoDB connection error:', err);
+});
+db.once('open', () => {
+  console.log('Connected to MongoDB');
+});
 
 app.use(cors())
 
@@ -21,7 +33,7 @@ app.put('/api/post', (req, res) => {
 });
 
 app.get('/mobiles', (req, res) => {
-  res.send(mobiles) ;
+  res.send(mobiles);
 })
 
 app.listen(PORT, () => {
