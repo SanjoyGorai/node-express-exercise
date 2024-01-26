@@ -28,4 +28,4 @@ app.listen(PORT, () => {
   console.log(`Express Server listening on port http://localhost:${PORT}`);
 });
 
-console.log()
+console.log(process.env);
