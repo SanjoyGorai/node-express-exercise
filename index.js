@@ -3,6 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 4001;
 import userRouter from './routers/user.js'
 import cors from 'cors';
+import mobiles from './ProductsApi/products.js'
 
 app.use(cors())
 
@@ -19,6 +20,9 @@ app.put('/api/post', (req, res) => {
   res.send("Success");
 });
 
+app.get('/mobiles', (req, res) => {
+  res.send(mobiles) ;
+})
 
 app.listen(PORT, () => {
   console.log(`Express Server listening on port http://localhost:${PORT}`);
