@@ -6,38 +6,27 @@ import cors from 'cors';
 import mobiles, { products } from './ProductsApi/products.js'
 import mongoose from 'mongoose';
 import Person from './PersonSchema/Person.js'
+import pg from 'pg';
+const { Pool, Client } = pg;
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=SanjoyDB');
-const db = mongoose.connection;
-
-
-
-
-db.on('error', (err) => {
-  console.log('MongoDB connection error:', err);
+const client = new Client({
+  host: 'localhost',
+  port: 5432,
+  database: 'postgres',
+  user: 'postgres',
+  password: 'sanjoypql',
 });
-db.once('open', () => {
-  console.log('Connected to MongoDB');
-});
+await client.connect();
 
-
-app.get('/create-person', async (req, res) => {
-  try {
-    const newPerson = new Person({
-      name: 'John Doe',
-      age: 30,
-    });
-
-    await newPerson.save();
-    res.json({ message: 'Person created successfully!' });
-  } catch (error) {
-    console.error('Error creating person:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+client.query('SELECT NOW()', (err, res) => {
+  if (err) {
+    console.error('Error connecting to PostgreSQL:'), err;
+  } else {
+    console.log('Connected to PostgreSQL:', res.rows[0].now);
   }
 });
 
-app.use(cors())
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Hello from Express Js')
