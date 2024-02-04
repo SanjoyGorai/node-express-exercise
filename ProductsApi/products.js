@@ -98,4 +98,107 @@ const mobiles = [
   }
 ]
 
+export const products = [
+  {
+    category: {
+      createdAt: '2024-04-28T04:41:51.000Z',
+      id: 1,
+      image: 'https://i.imgur.com/QkIs5tT.jpeg',
+      name: 'Clothes',
+      updatedAt: '2024-04-28T...'
+    },
+    createdAt: '2024-04-28T...000Z',
+    description: 'Step out in style with this sleek navy blue base ball cap',
+    id: 9,
+    images: [
+      { 0: 'https://i.imgur.com/R3iobJA.jpeg' },
+      { 1: 'https://i.imgur.com/Wv2ksf.jpeg' },
+      { 2: 'https://i.imgur.com/76HAXcA.jpeg' },
+    ],
+    price: 61,
+    title: "Classic Nayv Blue Baseball Cap",
+    updatedAt: '2024-04-28T04:41:51.000Z'
+  },
+  {
+    category: {
+      createdAt: '2024-04-28T04:41:51.000Z',
+      id: 1,
+      image: 'https://i.imgur.com/QkIs5tT.jpeg',
+      name: 'Clothes',
+      updatedAt: '2024-04-28T...'
+    },
+    createdAt: '2024-04-28T...000Z',
+    description: 'Step out in style with this sleek navy blue base ball cap',
+    id: 9,
+    images: [
+      { 0: 'https://i.imgur.com/R3iobJA.jpeg' },
+      { 1: 'https://i.imgur.com/Wv2ksf.jpeg' },
+      { 2: 'https://i.imgur.com/76HAXcA.jpeg' },
+    ],
+    price: 61,
+    title: "Classic Nayv Blue Baseball Cap",
+    updatedAt: '2024-04-28T04:41:51.000Z'
+  },
+  {
+    category: {
+      createdAt: '2024-04-28T04:41:51.000Z',
+      id: 1,
+      image: 'https://i.imgur.com/QkIs5tT.jpeg',
+      name: 'Clothes',
+      updatedAt: '2024-04-28T...'
+    },
+    createdAt: '2024-04-28T...000Z',
+    description: 'Step out in style with this sleek navy blue base ball cap',
+    id: 9,
+    images: [
+      { 0: 'https://i.imgur.com/R3iobJA.jpeg' },
+      { 1: 'https://i.imgur.com/Wv2ksf.jpeg' },
+      { 2: 'https://i.imgur.com/76HAXcA.jpeg' },
+    ],
+    price: 61,
+    title: "Classic Nayv Blue Baseball Cap",
+    updatedAt: '2024-04-28T04:41:51.000Z'
+  },
+  {
+    category: {
+      createdAt: '2024-04-28T04:41:51.000Z',
+      id: 1,
+      image: 'https://i.imgur.com/QkIs5tT.jpeg',
+      name: 'Clothes',
+      updatedAt: '2024-04-28T...'
+    },
+    createdAt: '2024-04-28T...000Z',
+    description: 'Step out in style with this sleek navy blue base ball cap',
+    id: 9,
+    images: [
+      { 0: 'https://i.imgur.com/R3iobJA.jpeg' },
+      { 1: 'https://i.imgur.com/Wv2ksf.jpeg' },
+      { 2: 'https://i.imgur.com/76HAXcA.jpeg' },
+    ],
+    price: 61,
+    title: "Classic Nayv Blue Baseball Cap",
+    updatedAt: '2024-04-28T04:41:51.000Z'
+  },
+  {
+    category: {
+      createdAt: '2024-04-28T04:41:51.000Z',
+      id: 1,
+      image: 'https://i.imgur.com/QkIs5tT.jpeg',
+      name: 'Clothes',
+      updatedAt: '2024-04-28T...'
+    },
+    createdAt: '2024-04-28T...000Z',
+    description: 'Step out in style with this sleek navy blue base ball cap',
+    id: 9,
+    images: [
+      { 0: 'https://i.imgur.com/R3iobJA.jpeg' },
+      { 1: 'https://i.imgur.com/Wv2ksf.jpeg' },
+      { 2: 'https://i.imgur.com/76HAXcA.jpeg' },
+    ],
+    price: 61,
+    title: "Classic Nayv Blue Baseball Cap",
+    updatedAt: '2024-04-28T04:41:51.000Z'
+  }
+];
+
 export default mobiles
